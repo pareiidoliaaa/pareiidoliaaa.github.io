@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import siteConfig from '../../site.config.mjs';
+import Footer from '../components/Footer.astro';
+import NavBar from '../components/NavBar.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title, description = `Photography by ${siteConfig.owner}.` } = Astro.props;
+const pageTitle = title ? `${title} · ${siteConfig.owner}` : `${siteConfig.owner} — Photography`;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={description} />
+		<link rel="icon" type="image/x-icon" href={`${base}/${siteConfig.favicon}`} />
+		<title>{pageTitle}</title>
+
+		<!-- Runs before first paint so there is no flash of the wrong theme. -->
+		<script is:inline>
+			(function () {
+				var root = document.documentElement;
+				root.classList.add('js');
+				var apply = function (el) {
+					var stored = null;
+					try {
+						stored = localStorage.getItem('theme');
+					} catch (e) {}
+					var dark = stored
+						? stored === 'dark'
+						: matchMedia('(prefers-color-scheme: dark)').matches;
+					el.dataset.theme = dark ? 'dark' : 'light';
+					el.classList.add('js');
+				};
+				apply(root);
+				document.addEventListener('astro:after-swap', function () {
+					apply(document.documentElement);
+				});
+			})();
+		</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap"
+			rel="stylesheet"
+		/>
+		<noscript>
+			<style>
+				img[data-fade] {
+					opacity: 1 !important;
+				}
+			</style>
+		</noscript>
+		<ClientRouter />
+	</head>
+	<body>
+		<NavBar />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+		<script>
+			import '../scripts/motion';
+		</script>
+	</body>
+</html>

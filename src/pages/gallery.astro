@@ -1,0 +1,70 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getCollections, getImages } from '../data/imageStore';
+import { preparePhotos } from '../data/photos';
+
+const collections = await getCollections();
+const photos = await preparePhotos(await getImages(), collections, {
+	widths: [480, 800, 1200],
+	thumbWidth: 1000,
+	fullWidth: 2800,
+});
+const filters = [{ id: 'all', name: 'All' }, ...collections];
+---
+
+<MainLayout title="Gallery" description="Every photograph, filterable by collection.">
+	<div class="page">
+		<header class="page-head">
+			<div data-reveal>
+				<h1 class="page-title">Gallery</h1>
+				<p class="mono" data-count>
+					{photos.length}
+					{photos.length === 1 ? 'photograph' : 'photographs'}
+				</p>
+			</div>
+			<div class="seg" role="group" aria-label="Filter by collection" data-reveal>
+				<span class="thumb" aria-hidden="true"></span>
+				{
+					filters.map((filter, i) => (
+						<button type="button" data-filter={filter.id} aria-pressed={String(i === 0)}>
+							{filter.name}
+						</button>
+					))
+				}
+			</div>
+		</header>
+
+		<div class="grid">
+			{
+				photos.map((photo, i) => (
+					<a
+						class="tile"
+						href={photo.full}
+						style={`--r:${photo.ratio.toFixed(4)}`}
+						data-reveal
+						data-lightbox
+						data-full={photo.full}
+						data-w={photo.width}
+						data-h={photo.height}
+						data-title={photo.title}
+						data-sub={photo.sub}
+						data-collections={photo.collectionIds.join(' ')}
+						aria-label={`View ${photo.title} full screen`}
+					>
+						<img
+							src={photo.thumb}
+							srcset={photo.srcset}
+							sizes="(min-width: 900px) 33vw, 60vw"
+							width={photo.width}
+							height={photo.height}
+							alt={photo.description || photo.title}
+							data-fade
+							loading={i < 6 ? 'eager' : 'lazy'}
+							decoding="async"
+						/>
+					</a>
+				))
+			}
+		</div>
+	</div>
+</MainLayout>

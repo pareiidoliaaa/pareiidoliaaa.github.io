@@ -1,0 +1,75 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { featuredCollectionId, getCollections, getImages } from '../data/imageStore';
+import { preparePhotos } from '../data/photos';
+
+// The best photos are the ones tagged `featured` in gallery.yaml, shown in that order.
+const collections = await getCollections();
+let selected = await getImages({ collection: featuredCollectionId });
+if (selected.length === 0) selected = (await getImages()).slice(0, 6);
+const photos = await preparePhotos(selected, collections, {
+	widths: [900, 1400, 2000, 2800],
+	thumbWidth: 1400,
+	fullWidth: 2800,
+});
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+
+<MainLayout description="A short, curated selection of my best photographs.">
+	{
+		photos.map((photo, i) => (
+			<section class="scene" aria-label={photo.title}>
+				<div class="scene-inner">
+					<div class="frame">
+						<a
+							class="shot"
+							href={photo.full}
+							data-lightbox
+							data-full={photo.full}
+							data-w={photo.width}
+							data-h={photo.height}
+							data-title={photo.title}
+							data-sub={photo.sub}
+							aria-label={`View ${photo.title} full screen`}
+						>
+							<img
+								src={photo.thumb}
+								srcset={photo.srcset}
+								sizes="(min-width: 1360px) 1280px, 100vw"
+								width={photo.width}
+								height={photo.height}
+								alt={photo.description || photo.title}
+								data-fade
+								loading={i === 0 ? 'eager' : 'lazy'}
+								fetchpriority={i === 0 ? 'high' : undefined}
+								decoding="async"
+							/>
+						</a>
+					</div>
+					<p class="caption">
+						<span class="num">
+							{pad(i + 1)} / {pad(photos.length)}
+						</span>
+						<b>{photo.title}</b>
+						{photo.sub && <span>{photo.sub}</span>}
+					</p>
+				</div>
+			</section>
+		))
+	}
+
+	{
+		photos.length > 1 && (
+			<nav class="dots" aria-label="Photos">
+				{photos.map((photo, i) => (
+					<button
+						type="button"
+						aria-label={`Go to ${photo.title}`}
+						aria-current={i === 0 ? 'true' : 'false'}
+					/>
+				))}
+			</nav>
+		)
+	}
+	<div class="cue" aria-hidden="true"></div>
+</MainLayout>

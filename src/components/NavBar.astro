@@ -1,0 +1,35 @@
+---
+import siteConfig from '../../site.config.mjs';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const menuItems = [
+	{ name: 'Best', link: `${base}/`, home: true },
+	{ name: 'Gallery', link: `${base}/gallery/` },
+	{ name: 'About', link: `${base}/about/` },
+];
+---
+
+<header class="nav" transition:persist="nav">
+	<nav class="nav-inner" aria-label="Main">
+		<a class="brand" href={`${base}/`}>{siteConfig.owner}</a>
+		<div class="nav-right">
+			<div class="menu">
+				{
+					menuItems.map((item) => (
+						<a href={item.link} data-home={item.home ? '' : undefined}>
+							{item.name}
+						</a>
+					))
+				}
+				<span class="indicator" aria-hidden="true"></span>
+			</div>
+			<button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode">
+				<svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+					<circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"
+					></circle>
+					<path d="M8 1.75a6.25 6.25 0 0 0 0 12.5z" fill="currentColor"></path>
+				</svg>
+			</button>
+		</div>
+	</nav>
+</header>

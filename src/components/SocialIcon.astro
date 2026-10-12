@@ -1,0 +1,9 @@
+---
+const { socialLink } = Astro.props;
+
+const Icon = socialLink.icon;
+---
+
+<a href={socialLink.url} target="_blank" rel="noopener noreferrer" aria-label={socialLink.name}>
+	<Icon size={18} strokeWidth={1.5} />
+</a>

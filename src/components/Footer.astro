@@ -1,0 +1,19 @@
+---
+import siteConfig from '../../site.config.mjs';
+import SocialIcon from './SocialIcon.astro';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+	<span>© {year} {siteConfig.owner}</span>
+	{
+		siteConfig.socialLinks.length > 0 && (
+			<div class="socials">
+				{siteConfig.socialLinks.map((socialLink) => (
+					<SocialIcon socialLink={socialLink} />
+				))}
+			</div>
+		)
+	}
+</footer>
