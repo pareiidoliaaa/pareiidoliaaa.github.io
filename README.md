@@ -1,4 +1,4 @@
-# June Kim — Photography
+# pareiidoliaaa — Photography
 
 Personal photography portfolio, published at <https://pareiidoliaaa.github.io/>.
 

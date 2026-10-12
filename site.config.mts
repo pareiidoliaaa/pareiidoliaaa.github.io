@@ -7,9 +7,9 @@ export interface SocialLink {
 }
 
 export default {
-	title: 'JK',
+	title: 'pareiidoliaaa',
 	favicon: 'favicon.ico',
-	owner: 'June Kim',
+	owner: 'pareiidoliaaa',
 	profileImage: 'profile.webp',
 	socialLinks: [] as SocialLink[],
 };
