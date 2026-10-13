@@ -16,7 +16,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Link previews (KakaoTalk, Slack, X…) need absolute URLs.
 const origin = (Astro.site?.href ?? '').replace(/\/$/, '');
 const pageUrl = `${origin}${Astro.url.pathname}`;
-const ogImage = `${origin}${base}/og.jpg`;
+const ogImage = `${origin}${base}/og-about.jpg`;
 ---
 
 <html lang="en">
