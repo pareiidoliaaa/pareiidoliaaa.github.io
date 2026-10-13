@@ -687,15 +687,21 @@ html[data-scrolled] .cue {
 
 /* ───────────── about ───────────── */
 .about {
-	margin-top: clamp(16px, 2.5vw, 28px);
+	display: grid;
+	grid-template-columns: auto minmax(0, 1fr);
+	align-items: center;
+	gap: clamp(32px, 6vw, 96px);
 }
 
-/* Sized so title, text and photo fit one desktop screen without scrolling. */
+.about-text .prose {
+	margin-top: clamp(18px, 2vw, 28px);
+}
+
+/* Sized so the whole page fits one desktop screen without scrolling. */
 .about-photo {
 	display: block;
-	width: min(100%, calc((100svh - 400px) * 1.5));
-	min-width: min(100%, 320px);
-	margin-top: clamp(28px, 4vw, 44px);
+	justify-self: end;
+	width: min(100%, calc((100svh - var(--nav-h) - 160px) * 1.5));
 	overflow: hidden;
 	border-radius: 3px;
 	background: var(--surface);
@@ -742,6 +748,9 @@ html[data-scrolled] .cue {
 }
 
 @media (max-width: 800px) {
+	.about {
+		grid-template-columns: 1fr;
+	}
 	.about-photo {
 		width: 100%;
 	}

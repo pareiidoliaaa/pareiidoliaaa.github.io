@@ -10,10 +10,12 @@ const alt = 'A rusted iron figure standing alone on a pale terrace above green h
 
 <MainLayout title="About" description={`About ${siteConfig.owner}.`}>
 	<div class="page">
-		<h1 class="page-title" data-reveal>About</h1>
 		<div class="about">
-			<div class="prose" data-reveal>
-				<AboutPage />
+			<div class="about-text" data-reveal>
+				<h1 class="page-title">{siteConfig.owner}</h1>
+				<div class="prose">
+					<AboutPage />
+				</div>
 			</div>
 			<a
 				class="about-photo"
