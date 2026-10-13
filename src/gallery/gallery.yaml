@@ -10,12 +10,43 @@ collections:
   - id: nature
     name: Nature
 images:
+  - path: heritage/IMG_0333.jpg
+    meta:
+      title: Osaka Castle
+      description: The castle keep rising above pine-lined garden ponds on a clear autumn day.
+      collections:
+        - featured
+        - heritage
+    exif: {}
+  - path: heritage/IMG_0347.jpg
+    meta:
+      title: Pagoda Through Leaves
+      description: A vermilion pagoda framed by maple leaves, Kyoto.
+      collections:
+        - featured
+        - heritage
+    exif: {}
+  - path: heritage/IMG_0192.jpg
+    meta:
+      title: Moss Guardian
+      description: A stone guardian clothed in moss beneath a red curtain, Hozen-ji, Osaka.
+      collections:
+        - featured
+        - heritage
+    exif: {}
+  - path: heritage/IMG_0243.jpg
+    meta:
+      title: Pagoda Above the Trees
+      description: A vermilion pagoda rising above a dense green canopy, Kyoto.
+      collections:
+        - featured
+        - heritage
+    exif: {}
   - path: architecture/PB170449.jpg
     meta:
       title: Still Water
       description: A concrete frame opening onto autumn woods, doubled in a black reflecting pool.
       collections:
-        - featured
         - architecture
     exif:
       captureDate: 2022-11-17 14:25:15+00:00
@@ -30,7 +61,6 @@ images:
       title: Keeper of the Colosseum
       description: A yellow-legged gull resting on the ancient stone of the Colosseum, Rome.
       collections:
-        - featured
         - nature
     exif:
       captureDate: 2026-01-02 10:18:01+00:00
@@ -39,20 +69,11 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 125
-  - path: heritage/IMG_0333.jpg
-    meta:
-      title: Osaka Castle
-      description: The castle keep rising above pine-lined garden ponds on a clear autumn day.
-      collections:
-        - featured
-        - heritage
-    exif: {}
   - path: architecture/P1044658.jpg
     meta:
       title: Rose Window
       description: Stained-glass rose window above the organ pipes, St. Vitus Cathedral, Prague.
       collections:
-        - featured
         - architecture
     exif:
       captureDate: 2026-02-02 12:06:51+00:00
@@ -66,7 +87,6 @@ images:
       title: Grand Canal at Dusk
       description: Gondolas and palazzi fading into the evening light on the Grand Canal, Venice.
       collections:
-        - featured
         - landscape
     exif:
       captureDate: 2026-01-05 16:19:52+00:00
@@ -80,7 +100,6 @@ images:
       title: Through the Arch
       description: A dark concrete arch framing a sunlit terrace, sculpture and green mountains.
       collections:
-        - featured
         - architecture
     exif:
       fNumber: 5.6
@@ -94,7 +113,6 @@ images:
       title: Mucha Window
       description: Alphonse Mucha's stained-glass window, backlit, in St. Vitus Cathedral, Prague.
       collections:
-        - featured
         - art
     exif:
       captureDate: 2026-02-02 12:21:33+00:00
@@ -108,7 +126,6 @@ images:
       title: Arch of Titus
       description: Coffered vault and carved reliefs of the Arch of Titus, Roman Forum.
       collections:
-        - featured
         - heritage
     exif:
       captureDate: 2026-01-02 11:02:06+00:00
@@ -117,30 +134,6 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 400
-  - path: heritage/IMG_0192.jpg
-    meta:
-      title: Moss Guardian
-      description: A stone guardian clothed in moss beneath a red curtain, Hozen-ji, Osaka.
-      collections:
-        - featured
-        - heritage
-    exif: {}
-  - path: heritage/IMG_0347.jpg
-    meta:
-      title: Pagoda Through Leaves
-      description: A vermilion pagoda framed by maple leaves, Kyoto.
-      collections:
-        - featured
-        - heritage
-    exif: {}
-  - path: heritage/IMG_0243.jpg
-    meta:
-      title: Pagoda Above the Trees
-      description: A vermilion pagoda rising above a dense green canopy, Kyoto.
-      collections:
-        - featured
-        - heritage
-    exif: {}
   - path: landscape/DSC04721.jpg
     meta:
       title: Kyoto Hills
