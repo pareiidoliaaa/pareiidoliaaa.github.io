@@ -504,17 +504,20 @@ html[data-scrolled] .cue {
 
 .grid {
 	--th: clamp(150px, 21vw, 270px);
-	--row-h: clamp(140px, 20vw, 260px);
 	display: flex;
 	flex-wrap: wrap;
-	gap: 6px;
+	gap: clamp(10px, 1.2vw, 16px);
 }
-/* Once JS has sized every tile to its own ratio, turn off flex stretching. */
-.grid[data-justified]::after {
+/* Once JS has placed every tile, the grid becomes an absolutely positioned masonry. */
+.grid[data-masonry] {
+	position: relative;
+	display: block;
+}
+.grid[data-masonry]::after {
 	display: none;
 }
-.grid[data-justified] .tile {
-	flex: none;
+.grid[data-masonry] .tile {
+	position: absolute;
 	aspect-ratio: auto;
 }
 /* A huge-growth spacer keeps the last row from stretching across the page. */

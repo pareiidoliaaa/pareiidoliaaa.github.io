@@ -320,54 +320,33 @@ function initGallery() {
 	);
 }
 
-/* ───────── justified grid ───────── */
+/* ───────── masonry grid ───────── */
 
 /**
- * Lays visible tiles out in rows that fill the grid width exactly while keeping
- * every photo's own aspect ratio (no cropping). Row breaks are chosen together so
- * row heights stay close to the target and the last row is never a lone orphan.
+ * Pinterest-style masonry: each visible tile takes the full column width at its own
+ * aspect ratio (no cropping) and drops into the currently shortest column, so the
+ * reading order stays left to right. Column count follows the grid width.
  */
 function layoutGrid(grid: HTMLElement) {
 	const tiles = $$<HTMLElement>('.tile', grid).filter((t) => !t.hidden);
 	const W = grid.clientWidth;
-	if (!tiles.length || !W) return;
-	const css = getComputedStyle(grid);
-	const gap = parseFloat(css.columnGap) || 0;
-	const target = parseFloat(css.getPropertyValue('--row-h')) || 240;
-	const ratios = tiles.map((t) => parseFloat(t.style.getPropertyValue('--r')) || 1);
-	const n = tiles.length;
-	const fit = (i: number, j: number) => {
-		let r = 0;
-		for (let k = i; k < j; k++) r += ratios[k];
-		return (W - gap * (j - i - 1)) / r;
-	};
-	// best[i]: minimal cost of laying out tiles[i..]; next[i]: where the row starting at i ends
-	const best = new Array<number>(n + 1).fill(Infinity);
-	const next = new Array<number>(n + 1).fill(n);
-	best[n] = 0;
-	for (let i = n - 1; i >= 0; i--) {
-		for (let j = i + 1; j <= n; j++) {
-			const h = fit(i, j);
-			if (h < target * 0.55) break;
-			const last = j === n;
-			// An underfilled last row may stay at target height instead of stretching.
-			const dev = last && h > target ? Math.min(h - target, target * 0.6) : h - target;
-			const cost = dev * dev + best[j];
-			if (cost < best[i]) {
-				best[i] = cost;
-				next[i] = j;
-			}
-		}
+	if (!W) return;
+	const gap = parseFloat(getComputedStyle(grid).columnGap) || 0;
+	const cols = W >= 1100 ? 3 : W >= 600 ? 2 : 1;
+	const colW = (W - gap * (cols - 1)) / cols;
+	const heights = new Array<number>(cols).fill(0);
+	for (const t of tiles) {
+		const ratio = parseFloat(t.style.getPropertyValue('--r')) || 1;
+		const h = colW / ratio;
+		const c = heights.indexOf(Math.min(...heights));
+		t.style.width = `${colW.toFixed(2)}px`;
+		t.style.height = `${h.toFixed(2)}px`;
+		t.style.left = `${(c * (colW + gap)).toFixed(2)}px`;
+		t.style.top = `${heights[c].toFixed(2)}px`;
+		heights[c] += h + gap;
 	}
-	for (let i = 0; i < n; i = next[i]) {
-		const j = next[i];
-		const h = j === n ? Math.min(fit(i, j), target * 1.25) : fit(i, j);
-		for (let k = i; k < j; k++) {
-			tiles[k].style.width = `${(h * ratios[k]).toFixed(2)}px`;
-			tiles[k].style.height = `${h.toFixed(2)}px`;
-		}
-	}
-	grid.setAttribute('data-justified', '');
+	grid.style.height = `${Math.max(0, Math.max(...heights) - gap)}px`;
+	grid.setAttribute('data-masonry', '');
 }
 
 /* ───────── boot ───────── */
