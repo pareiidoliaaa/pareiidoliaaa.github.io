@@ -1,90 +1,285 @@
 collections:
-  - id: nature
-    name: Nature
-  - id: travel
-    name: Travel
-  - id: street
-    name: Street
+  - id: landscape
+    name: Landscape
+  - id: architecture
+    name: Architecture
+  - id: heritage
+    name: Heritage
+  - id: art
+    name: Art
+  - id: wildlife
+    name: Wildlife
 images:
-  - path: nature/nature-2.jpg
+  - path: architecture/PB170449.jpg
     meta:
-      title: Nature scene 2
-      description: Serene natural landscape capturing the essence of wilderness.
-      collections:
-        - nature
-    exif: {}
-  - path: nature/nature-3.jpg
-    meta:
-      title: Nature scene 3
-      description: Breathtaking natural vista showcasing environmental beauty.
+      title: Still Water
+      description: A concrete frame opening onto autumn woods, doubled in a black reflecting pool.
       collections:
         - featured
-        - nature
-    exif: {}
-  - path: nature/nature-5.jpg
-    meta:
-      title: Nature scene 5
-      description: Natural landscape showing the raw beauty of the environment.
-      collections:
-        - nature
-    exif: {}
-  - path: nature/nature-7.jpg
-    meta:
-      title: Nature scene 7
-      description: Stunning natural landscape capturing environmental beauty.
-      collections:
-        - featured
-        - nature
-    exif: {}
-  - path: nature/nature-8.jpg
-    meta:
-      title: Nature scene 8
-      description: Beautiful natural vista showcasing environmental wonder.
-      collections:
-        - nature
-    exif: {}
-  - path: nature/L1002174.jpg
-    meta:
-      title: Travel scene 6
-      description: null
-      collections:
-        - featured
-        - nature
+        - architecture
     exif:
-      captureDate: 2025-03-27T10:35:21.000Z
-      fNumber: 8
-      focalLength: 28
+      captureDate: 2022-11-17 14:25:15+00:00
+      fNumber: 4.5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 400
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: wildlife/P1011780.jpg
+    meta:
+      title: Keeper of the Colosseum
+      description: A yellow-legged gull resting on the ancient stone of the Colosseum, Rome.
+      collections:
+        - featured
+        - wildlife
+    exif:
+      captureDate: 2026-01-02 10:18:01+00:00
+      fNumber: 4.1
+      focalLength: 9.6
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 125
+  - path: heritage/DSC02818.jpg
+    meta:
+      title: Osaka Castle
+      description: The castle keep rising above pine-lined garden ponds on a clear autumn day.
+      collections:
+        - featured
+        - heritage
+    exif:
+      captureDate: 2026-10-02 13:34:28+00:00
+      fNumber: 4
+      focalLength: 23
+      iso: 200
+      model: ILCE-6700
+      shutterSpeed: 2000
+      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: architecture/P1044658.jpg
+    meta:
+      title: Rose Window
+      description: Stained-glass rose window above the organ pipes, St. Vitus Cathedral, Prague.
+      collections:
+        - featured
+        - architecture
+    exif:
+      captureDate: 2026-02-02 12:06:51+00:00
+      fNumber: 5.6
+      focalLength: 15
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 40
+  - path: landscape/P1033803.jpg
+    meta:
+      title: Grand Canal at Dusk
+      description: Gondolas and palazzi fading into the evening light on the Grand Canal, Venice.
+      collections:
+        - featured
+        - landscape
+    exif:
+      captureDate: 2026-01-05 16:19:52+00:00
+      fNumber: 5
+      focalLength: 17.5
+      iso: 200
+      model: DC-TZ99
+      shutterSpeed: 125
+  - path: architecture/P1011558.jpg
+    meta:
+      title: Through the Arch
+      description: A dark concrete arch framing a sunlit terrace, sculpture and green mountains.
+      collections:
+        - featured
+        - architecture
+    exif:
+      fNumber: 5.6
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: OLYMPUS M.17mm F1.8
+  - path: art/P1044683.jpg
+    meta:
+      title: Mucha Window
+      description: Alphonse Mucha's stained-glass window, backlit, in St. Vitus Cathedral, Prague.
+      collections:
+        - featured
+        - art
+    exif:
+      captureDate: 2026-02-02 12:21:33+00:00
+      fNumber: 5.6
+      focalLength: 20.6
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 30
+  - path: heritage/P1021868.jpg
+    meta:
+      title: Arch of Titus
+      description: Coffered vault and carved reliefs of the Arch of Titus, Roman Forum.
+      collections:
+        - featured
+        - heritage
+    exif:
+      captureDate: 2026-01-02 11:02:06+00:00
+      fNumber: 3.7
+      focalLength: 6.7
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 400
+  - path: architecture/P1010937.jpg
+    meta:
+      title: Station Clock
+      description: The gilded clock of the former Gare d'Orsay, Paris.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2025-12-27 11:26:18+00:00
+      fNumber: 6.3
+      focalLength: 17.5
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 50
+  - path: art/P1022767.jpg
+    meta:
+      title: Angel with the Cross
+      description: A Baroque angel on Ponte Sant'Angelo under a grey Roman sky.
+      collections:
+        - art
+    exif:
+      captureDate: 2026-01-03 12:27:41+00:00
+      fNumber: 4.1
+      focalLength: 9
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 800
+  - path: heritage/P1044434.jpg
+    meta:
+      title: Astronomical Clock
+      description: The medieval astronomical clock on the Old Town Hall, Prague.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-02-02 10:11:51+00:00
+      fNumber: 4.1
+      focalLength: 9.6
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: heritage/DSC04143.jpg
+    meta:
+      title: Senbon Torii
+      description: Rows of vermilion torii gates winding through the forest at Fushimi Inari, Kyoto.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-10-04 09:08:44+00:00
+      fNumber: 4
+      focalLength: 17
+      iso: 1600
+      model: ILCE-6700
+      shutterSpeed: 160
+      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: heritage/DSC05147.jpg
+    meta:
+      title: Pagoda in the Rain
+      description: A vermilion pagoda glimpsed through rain-soaked maple leaves, Kyoto.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-10-04 13:18:54+00:00
+      fNumber: 5.6
+      focalLength: 50
       iso: 100
-      model: LEICA Q3
-      shutterSpeed: 1250
-      lensModel: SUMMILUX 1:1.7/28 ASPH.
-  - path: nature/nature-10.jpg
+      model: ILCE-6700
+      shutterSpeed: 125
+      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: art/P1011454.jpg
     meta:
-      title: Nature scene 10
-      description: Majestic natural landscape displaying environmental splendor.
+      title: Charred Columns
+      description: Towering sculptures of burnt timber against a mountain sky.
       collections:
-        - nature
-    exif: {}
-  - path: street/stree-1.jpg
+        - art
+    exif:
+      fNumber: 10
+      focalLength: 10
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 320
+      lensModel: OLYMPUS M.9-18mm F4.0-5.6
+  - path: art/P1011571.jpg
     meta:
-      title: Street photography 1
-      description: Urban scene capturing the essence of city life.
+      title: Iron Figure
+      description: A rusted iron block figure standing on a pale terrace above the hills.
       collections:
-        - featured
-        - street
-    exif: {}
-  - path: travel/travel-1.jpg
+        - art
+    exif:
+      fNumber: 5.6
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 640
+      lensModel: OLYMPUS M.17mm F1.8
+  - path: landscape/PB170385.jpg
     meta:
-      title: Travel scene 1
-      description: Journey through remarkable destinations.
+      title: Autumn Terraces
+      description: Red maples over shallow stepped pools in late autumn.
       collections:
-        - featured
-        - travel
-    exif: {}
-  - path: nature/nature-1.jpg
+        - landscape
+    exif:
+      captureDate: 2022-11-17 11:48:52+00:00
+      fNumber: 4.5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: landscape/P1033247.jpg
     meta:
-      title: Nature 1
-      description: ''
+      title: Venetian Canal
+      description: A quiet canal lined with pastel houses and a moored gondola, Venice.
       collections:
-        - nature
-    exif: {}
+        - landscape
+    exif:
+      captureDate: 2026-01-05 10:00:07+00:00
+      fNumber: 3.8
+      focalLength: 7.2
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: landscape/P1011191.jpg
+    meta:
+      title: Tokyo from Above
+      description: The Tokyo skyline under soft overcast light, with Tokyo Tower in the distance.
+      collections:
+        - landscape
+    exif:
+      fNumber: 5.6
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 640
+      lensModel: OLYMPUS M.17mm F1.8
+  - path: landscape/P1044471.jpg
+    meta:
+      title: Prague Rooftops
+      description: Red roofs of Malá Strana under a dusting of winter snow.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2026-02-02 10:42:07+00:00
+      fNumber: 3.8
+      focalLength: 7.2
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 200
+  - path: wildlife/P1033490.jpg
+    meta:
+      title: Young Gull
+      description: A juvenile gull perched on a mooring post against a pale Venetian sky.
+      collections:
+        - wildlife
+    exif:
+      captureDate: 2026-01-05 10:28:09+00:00
+      fNumber: 6.4
+      focalLength: 129
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 200
