@@ -14,8 +14,9 @@ const { title, description = `Photography by ${siteConfig.owner}.` } = Astro.pro
 const pageTitle = title ? `${title} · ${siteConfig.owner}` : `${siteConfig.owner} — Photography`;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Link previews (KakaoTalk, Slack, X…) need absolute URLs.
-const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
-const ogImage = new URL(`${base}/og.jpg`, Astro.site).href;
+const origin = (Astro.site?.href ?? '').replace(/\/$/, '');
+const pageUrl = `${origin}${Astro.url.pathname}`;
+const ogImage = `${origin}${base}/og.jpg`;
 ---
 
 <html lang="en">
