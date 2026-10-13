@@ -46,10 +46,9 @@ const filters = [{ id: 'all', name: 'All' }, ...collections];
 						data-full={photo.full}
 						data-w={photo.width}
 						data-h={photo.height}
-						data-title={photo.title}
 						data-sub={photo.sub}
 						data-collections={photo.collectionIds.join(' ')}
-						aria-label={`View ${photo.title} full screen`}
+						aria-label="View photo full screen"
 					>
 						<img
 							src={photo.thumb}
@@ -57,7 +56,7 @@ const filters = [{ id: 'all', name: 'All' }, ...collections];
 							sizes="(min-width: 900px) 33vw, 60vw"
 							width={photo.width}
 							height={photo.height}
-							alt={photo.description || photo.title}
+							alt=""
 							data-fade
 							loading={i < 6 ? 'eager' : 'lazy'}
 							decoding="async"

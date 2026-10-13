@@ -18,7 +18,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
 <MainLayout description="A short, curated selection of my best photographs.">
 	{
 		photos.map((photo, i) => (
-			<section class="scene" aria-label={photo.title}>
+			<section class="scene">
 				<div class="scene-inner">
 					<div class="frame">
 						<a
@@ -28,9 +28,8 @@ const pad = (n: number) => String(n).padStart(2, '0');
 							data-full={photo.full}
 							data-w={photo.width}
 							data-h={photo.height}
-							data-title={photo.title}
 							data-sub={photo.sub}
-							aria-label={`View ${photo.title} full screen`}
+							aria-label="View photo full screen"
 						>
 							<img
 								src={photo.thumb}
@@ -38,7 +37,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
 								sizes="(min-width: 1360px) 1280px, 100vw"
 								width={photo.width}
 								height={photo.height}
-								alt={photo.description || photo.title}
+								alt=""
 								data-fade
 								loading={i === 0 ? 'eager' : 'lazy'}
 								fetchpriority={i === 0 ? 'high' : undefined}
@@ -63,7 +62,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
 				{photos.map((photo, i) => (
 					<button
 						type="button"
-						aria-label={`Go to ${photo.title}`}
+						aria-label={`Go to photo ${i + 1}`}
 						aria-current={i === 0 ? 'true' : 'false'}
 					/>
 				))}

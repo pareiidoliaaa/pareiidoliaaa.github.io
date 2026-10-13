@@ -9,7 +9,6 @@ interface Item {
 	full: string;
 	width: number;
 	height: number;
-	title: string;
 	sub: string;
 }
 
@@ -177,7 +176,6 @@ function collect(): Item[] {
 			full: el.dataset.full ?? (el as HTMLAnchorElement).href,
 			width: Number(el.dataset.w) || 1,
 			height: Number(el.dataset.h) || 1,
-			title: el.dataset.title ?? '',
 			sub: el.dataset.sub ?? '',
 		}));
 }
@@ -193,7 +191,6 @@ function setCaption() {
 /** Show the thumbnail instantly, then swap to the full-size file once decoded. */
 function load(item: Item) {
 	const thumb = item.img?.currentSrc || item.img?.src || item.full;
-	imgEl.alt = item.title;
 	imgEl.src = thumb;
 	if (thumb !== item.full) {
 		const hi = new Image();
