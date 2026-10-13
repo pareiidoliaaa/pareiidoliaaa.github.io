@@ -39,21 +39,14 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 125
-  - path: heritage/DSC02818.jpg
+  - path: heritage/IMG_0333.jpg
     meta:
       title: Osaka Castle
       description: The castle keep rising above pine-lined garden ponds on a clear autumn day.
       collections:
         - featured
         - heritage
-    exif:
-      captureDate: 2026-10-02 13:34:28+00:00
-      fNumber: 4
-      focalLength: 23
-      iso: 200
-      model: ILCE-6700
-      shutterSpeed: 2000
-      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+    exif: {}
   - path: architecture/P1044658.jpg
     meta:
       title: Rose Window
@@ -124,6 +117,30 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 400
+  - path: heritage/IMG_0192.jpg
+    meta:
+      title: Moss Guardian
+      description: A stone guardian clothed in moss beneath a red curtain, Hozen-ji, Osaka.
+      collections:
+        - featured
+        - heritage
+    exif: {}
+  - path: heritage/IMG_0347.jpg
+    meta:
+      title: Pagoda Through Leaves
+      description: A vermilion pagoda framed by maple leaves, Kyoto.
+      collections:
+        - featured
+        - heritage
+    exif: {}
+  - path: heritage/IMG_0243.jpg
+    meta:
+      title: Pagoda Above the Trees
+      description: A vermilion pagoda rising above a dense green canopy, Kyoto.
+      collections:
+        - featured
+        - heritage
+    exif: {}
   - path: landscape/DSC04721.jpg
     meta:
       title: Kyoto Hills
@@ -415,20 +432,19 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 1000
-  - path: heritage/DSC05084.jpg
+  - path: heritage/P1000231.jpg
     meta:
-      title: Pagoda Spire
-      description: A vermilion pagoda rising above a dense green canopy, Kyoto.
+      title: Royal Gate
+      description: The gilded crown of the royal gate at Versailles against the clouds.
       collections:
         - heritage
     exif:
-      captureDate: 2026-10-04 13:14:53+00:00
-      fNumber: 5.6
-      focalLength: 50
-      iso: 100
-      model: ILCE-6700
+      captureDate: 2025-12-24 16:28:47+00:00
+      fNumber: 5.1
+      focalLength: 16.1
+      iso: 80
+      model: DC-TZ99
       shutterSpeed: 100
-      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
   - path: art/P1011335.jpg
     meta:
       title: Red Steel
@@ -482,20 +498,19 @@ images:
       iso: 800
       model: DC-TZ99
       shutterSpeed: 25
-  - path: heritage/DSC05147.jpg
+  - path: heritage/P1011517.jpg
     meta:
-      title: Pagoda in the Rain
-      description: A vermilion pagoda glimpsed through rain-soaked maple leaves, Kyoto.
+      title: Ancient Brick
+      description: Weathered Roman brickwork rising against a cloudy sky.
       collections:
         - heritage
     exif:
-      captureDate: 2026-10-04 13:18:54+00:00
-      fNumber: 5.6
-      focalLength: 50
-      iso: 100
-      model: ILCE-6700
-      shutterSpeed: 125
-      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+      captureDate: 2026-01-02 09:39:41+00:00
+      fNumber: 6.4
+      focalLength: 15
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 400
   - path: art/P1011359.jpg
     meta:
       title: Parthenon Marbles
@@ -549,20 +564,19 @@ images:
       iso: 160
       model: DC-TZ99
       shutterSpeed: 80
-  - path: heritage/DSC05462.jpg
+  - path: heritage/P1021873.jpg
     meta:
-      title: Moss Guardian
-      description: A stone guardian figure completely clothed in moss, Hozen-ji, Osaka.
+      title: Basilica of Maxentius
+      description: The great brick vaults of the Basilica of Maxentius above palms, Roman Forum.
       collections:
         - heritage
     exif:
-      captureDate: 2026-10-05 08:28:13+00:00
-      fNumber: 5.6
-      focalLength: 49
-      iso: 5000
-      model: ILCE-6700
-      shutterSpeed: 160
-      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+      captureDate: 2026-01-02 11:08:33+00:00
+      fNumber: 3.5
+      focalLength: 5
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 640
   - path: art/P1011420.jpg
     meta:
       title: Charcoal Column
@@ -616,19 +630,19 @@ images:
       iso: 640
       model: DC-TZ99
       shutterSpeed: 100
-  - path: heritage/P1000231.jpg
+  - path: heritage/P1022247.jpg
     meta:
-      title: Royal Gate
-      description: The gilded crown of the royal gate at Versailles against the clouds.
+      title: Pigna
+      description: The bronze pine cone and peacocks in the Cortile della Pigna, Vatican.
       collections:
         - heritage
     exif:
-      captureDate: 2025-12-24 16:28:47+00:00
-      fNumber: 5.1
-      focalLength: 16.1
-      iso: 80
+      captureDate: 2026-01-02 15:32:19+00:00
+      fNumber: 3.8
+      focalLength: 7.2
+      iso: 250
       model: DC-TZ99
-      shutterSpeed: 100
+      shutterSpeed: 80
   - path: art/P1011454.jpg
     meta:
       title: Charred Columns
@@ -682,19 +696,19 @@ images:
       iso: 125
       model: DC-TZ99
       shutterSpeed: 80
-  - path: heritage/P1011517.jpg
+  - path: heritage/P1022389.jpg
     meta:
-      title: Ancient Brick
-      description: Weathered Roman brickwork rising against a cloudy sky.
+      title: Cathedra Petri
+      description: Bernini's gilded Chair of Saint Peter glowing beneath the dove window, St. Peter's Basilica.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-02 09:39:41+00:00
-      fNumber: 6.4
-      focalLength: 15
-      iso: 80
+      captureDate: 2026-01-02 18:14:01+00:00
+      fNumber: 5.1
+      focalLength: 19
+      iso: 800
       model: DC-TZ99
-      shutterSpeed: 400
+      shutterSpeed: 25
   - path: art/P1011562.jpg
     meta:
       title: Figure in the Arch
@@ -736,19 +750,19 @@ images:
       model: PEN-F
       shutterSpeed: 400
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1021873.jpg
+  - path: heritage/P1033255.jpg
     meta:
-      title: Basilica of Maxentius
-      description: The great brick vaults of the Basilica of Maxentius above palms, Roman Forum.
+      title: Lion of Saint Mark
+      description: The golden winged lion and saints crowning St. Mark's Basilica, Venice.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-02 11:08:33+00:00
-      fNumber: 3.5
-      focalLength: 5
+      captureDate: 2026-01-05 10:08:01+00:00
+      fNumber: 5.1
+      focalLength: 19
       iso: 80
       model: DC-TZ99
-      shutterSpeed: 640
+      shutterSpeed: 200
   - path: art/P1011582.jpg
     meta:
       title: Weathered Blocks
@@ -790,17 +804,17 @@ images:
       model: PEN-F
       shutterSpeed: 60
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1022247.jpg
+  - path: heritage/P1044434.jpg
     meta:
-      title: Pigna
-      description: The bronze pine cone and peacocks in the Cortile della Pigna, Vatican.
+      title: Astronomical Clock
+      description: The medieval astronomical clock on the Old Town Hall, Prague.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-02 15:32:19+00:00
-      fNumber: 3.8
-      focalLength: 7.2
-      iso: 250
+      captureDate: 2026-02-02 10:11:51+00:00
+      fNumber: 4.1
+      focalLength: 9.6
+      iso: 80
       model: DC-TZ99
       shutterSpeed: 80
   - path: art/P1022431.jpg
@@ -844,19 +858,19 @@ images:
       model: PEN-F
       shutterSpeed: 320
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1022389.jpg
+  - path: heritage/P1044442.jpg
     meta:
-      title: Cathedra Petri
-      description: Bernini's gilded Chair of Saint Peter glowing beneath the dove window, St. Peter's Basilica.
+      title: Prague Castle
+      description: The spires of St. Vitus Cathedral rising over a hazy winter city, Prague.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-02 18:14:01+00:00
-      fNumber: 5.1
-      focalLength: 19
-      iso: 800
+      captureDate: 2026-02-02 10:23:58+00:00
+      fNumber: 5.6
+      focalLength: 44.8
+      iso: 80
       model: DC-TZ99
-      shutterSpeed: 25
+      shutterSpeed: 200
   - path: art/P1022442.jpg
     meta:
       title: Archangel
@@ -898,16 +912,16 @@ images:
       model: PEN-F
       shutterSpeed: 500
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1033255.jpg
+  - path: heritage/P1044517.jpg
     meta:
-      title: Lion of Saint Mark
-      description: The golden winged lion and saints crowning St. Mark's Basilica, Venice.
+      title: Cathedral in Snow
+      description: The Gothic apse of St. Vitus Cathedral under winter snow, Prague.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-05 10:08:01+00:00
-      fNumber: 5.1
-      focalLength: 19
+      captureDate: 2026-02-02 10:51:05+00:00
+      fNumber: 4.1
+      focalLength: 9.6
       iso: 80
       model: DC-TZ99
       shutterSpeed: 200
@@ -938,16 +952,16 @@ images:
       model: PEN-F
       shutterSpeed: 640
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1044434.jpg
+  - path: heritage/P1044618.jpg
     meta:
-      title: Astronomical Clock
-      description: The medieval astronomical clock on the Old Town Hall, Prague.
+      title: Weathervane
+      description: A copper rooster weathervane above snowy red roofs, Prague.
       collections:
         - heritage
     exif:
-      captureDate: 2026-02-02 10:11:51+00:00
-      fNumber: 4.1
-      focalLength: 9.6
+      captureDate: 2026-02-02 11:33:02+00:00
+      fNumber: 5.6
+      focalLength: 16.1
       iso: 80
       model: DC-TZ99
       shutterSpeed: 80
@@ -978,19 +992,6 @@ images:
       model: PEN-F
       shutterSpeed: 800
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1044442.jpg
-    meta:
-      title: Prague Castle
-      description: The spires of St. Vitus Cathedral rising over a hazy winter city, Prague.
-      collections:
-        - heritage
-    exif:
-      captureDate: 2026-02-02 10:23:58+00:00
-      fNumber: 5.6
-      focalLength: 44.8
-      iso: 80
-      model: DC-TZ99
-      shutterSpeed: 200
   - path: art/P1044677.jpg
     meta:
       title: Red and Blue
@@ -1004,19 +1005,6 @@ images:
       iso: 800
       model: DC-TZ99
       shutterSpeed: 80
-  - path: heritage/P1044517.jpg
-    meta:
-      title: Cathedral in Snow
-      description: The Gothic apse of St. Vitus Cathedral under winter snow, Prague.
-      collections:
-        - heritage
-    exif:
-      captureDate: 2026-02-02 10:51:05+00:00
-      fNumber: 4.1
-      focalLength: 9.6
-      iso: 80
-      model: DC-TZ99
-      shutterSpeed: 200
   - path: art/P1044699.jpg
     meta:
       title: Nested Squares
@@ -1030,19 +1018,6 @@ images:
       iso: 800
       model: DC-TZ99
       shutterSpeed: 4
-  - path: heritage/P1044618.jpg
-    meta:
-      title: Weathervane
-      description: A copper rooster weathervane above snowy red roofs, Prague.
-      collections:
-        - heritage
-    exif:
-      captureDate: 2026-02-02 11:33:02+00:00
-      fNumber: 5.6
-      focalLength: 16.1
-      iso: 80
-      model: DC-TZ99
-      shutterSpeed: 80
   - path: art/P1054740.jpg
     meta:
       title: Charles IV
