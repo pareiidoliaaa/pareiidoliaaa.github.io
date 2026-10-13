@@ -227,6 +227,7 @@ async function applyFilter(grid: HTMLElement, id: string, animate: boolean) {
 			t.hidden = !matches(t);
 			if (!t.hidden) t.classList.add('in');
 		});
+		layoutGrid(grid);
 		return;
 	}
 
@@ -247,6 +248,7 @@ async function applyFilter(grid: HTMLElement, id: string, animate: boolean) {
 		t.hidden = false;
 		t.classList.add('in');
 	});
+	layoutGrid(grid);
 
 	tiles
 		.filter((t) => first.has(t) && !t.hidden)
@@ -296,7 +298,15 @@ function initGallery() {
 		requestAnimationFrame(() => requestAnimationFrame(() => seg.setAttribute('data-ready', '')));
 	document.fonts?.ready.then(() => placeThumb(seg));
 	if (onGalleryResize) window.removeEventListener('resize', onGalleryResize);
-	onGalleryResize = () => placeThumb(seg);
+	layoutGrid(grid);
+	let lastWidth = grid.clientWidth;
+	onGalleryResize = () => {
+		placeThumb(seg);
+		if (grid.clientWidth !== lastWidth) {
+			lastWidth = grid.clientWidth;
+			layoutGrid(grid);
+		}
+	};
 	window.addEventListener('resize', onGalleryResize, { passive: true });
 
 	buttons.forEach((b) =>
@@ -308,6 +318,56 @@ function initGallery() {
 			applyFilter(grid, id, true);
 		}),
 	);
+}
+
+/* ───────── justified grid ───────── */
+
+/**
+ * Lays visible tiles out in rows that fill the grid width exactly while keeping
+ * every photo's own aspect ratio (no cropping). Row breaks are chosen together so
+ * row heights stay close to the target and the last row is never a lone orphan.
+ */
+function layoutGrid(grid: HTMLElement) {
+	const tiles = $$<HTMLElement>('.tile', grid).filter((t) => !t.hidden);
+	const W = grid.clientWidth;
+	if (!tiles.length || !W) return;
+	const css = getComputedStyle(grid);
+	const gap = parseFloat(css.columnGap) || 0;
+	const target = parseFloat(css.getPropertyValue('--row-h')) || 240;
+	const ratios = tiles.map((t) => parseFloat(t.style.getPropertyValue('--r')) || 1);
+	const n = tiles.length;
+	const fit = (i: number, j: number) => {
+		let r = 0;
+		for (let k = i; k < j; k++) r += ratios[k];
+		return (W - gap * (j - i - 1)) / r;
+	};
+	// best[i]: minimal cost of laying out tiles[i..]; next[i]: where the row starting at i ends
+	const best = new Array<number>(n + 1).fill(Infinity);
+	const next = new Array<number>(n + 1).fill(n);
+	best[n] = 0;
+	for (let i = n - 1; i >= 0; i--) {
+		for (let j = i + 1; j <= n; j++) {
+			const h = fit(i, j);
+			if (h < target * 0.55) break;
+			const last = j === n;
+			// An underfilled last row may stay at target height instead of stretching.
+			const dev = last && h > target ? Math.min(h - target, target * 0.6) : h - target;
+			const cost = dev * dev + best[j];
+			if (cost < best[i]) {
+				best[i] = cost;
+				next[i] = j;
+			}
+		}
+	}
+	for (let i = 0; i < n; i = next[i]) {
+		const j = next[i];
+		const h = j === n ? Math.min(fit(i, j), target * 1.25) : fit(i, j);
+		for (let k = i; k < j; k++) {
+			tiles[k].style.width = `${(h * ratios[k]).toFixed(2)}px`;
+			tiles[k].style.height = `${h.toFixed(2)}px`;
+		}
+	}
+	grid.setAttribute('data-justified', '');
 }
 
 /* ───────── boot ───────── */

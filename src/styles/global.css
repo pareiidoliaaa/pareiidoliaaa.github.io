@@ -463,6 +463,18 @@ html[data-scrolled] .cue {
 	color: var(--fg-soft);
 	transition: color 0.35s var(--ease-out);
 }
+@media (max-width: 520px) {
+	.seg button {
+		padding: 6px 8px;
+		font-size: 12px;
+	}
+}
+@media (max-width: 380px) {
+	.seg button {
+		padding: 6px 6px;
+		font-size: 11px;
+	}
+}
 .seg button:hover,
 .seg button[aria-pressed='true'] {
 	color: var(--fg);
@@ -492,9 +504,18 @@ html[data-scrolled] .cue {
 
 .grid {
 	--th: clamp(150px, 21vw, 270px);
+	--row-h: clamp(140px, 20vw, 260px);
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6px;
+}
+/* Once JS has sized every tile to its own ratio, turn off flex stretching. */
+.grid[data-justified]::after {
+	display: none;
+}
+.grid[data-justified] .tile {
+	flex: none;
+	aspect-ratio: auto;
 }
 /* A huge-growth spacer keeps the last row from stretching across the page. */
 .grid::after {
