@@ -316,12 +316,6 @@ main {
 	color: var(--fg-soft);
 	will-change: transform, opacity;
 }
-.caption b {
-	font-size: 15px;
-	font-weight: 500;
-	color: var(--fg);
-	letter-spacing: -0.01em;
-}
 .caption .num {
 	font-family: var(--font-mono);
 	font-size: 11px;
@@ -598,11 +592,6 @@ html[data-scrolled] .cue {
 	opacity: 1;
 	transform: none;
 }
-.lb-cap b {
-	font-size: 15px;
-	font-weight: 500;
-	color: var(--fg);
-}
 .lb-cap .num {
 	font-family: var(--font-mono);
 	font-size: 11px;
@@ -677,10 +666,6 @@ html[data-scrolled] .cue {
 
 /* ───────────── about ───────────── */
 .about {
-	display: grid;
-	grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-	gap: clamp(32px, 7vw, 112px);
-	align-items: center;
 	margin-top: clamp(32px, 6vw, 72px);
 }
 
@@ -689,32 +674,50 @@ html[data-scrolled] .cue {
 	border-radius: 3px;
 	background: var(--surface);
 	box-shadow: var(--shadow);
-	aspect-ratio: 4 / 5;
+	aspect-ratio: 3 / 2;
 }
 .about-photo img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: 50% 70%;
 	transition:
 		opacity 1.1s var(--ease-out),
 		transform 2s var(--ease-out);
 }
 .about-photo:hover img {
-	transform: scale(1.025);
+	transform: scale(1.02);
+}
+
+.about-body {
+	display: grid;
+	grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
+	gap: clamp(28px, 6vw, 96px);
+	margin-top: clamp(40px, 6vw, 88px);
+}
+.about-label {
+	padding-top: 0.55em;
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--fg-soft);
 }
 
 .prose {
-	max-width: 56ch;
+	max-width: 60ch;
 	font-size: clamp(16px, 1.3vw, 18px);
+	line-height: 1.75;
 	color: color-mix(in srgb, var(--fg) 82%, var(--bg));
 }
 .prose h3 {
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 	font-family: var(--font-serif);
-	font-size: clamp(24px, 3vw, 32px);
+	font-size: clamp(26px, 3.2vw, 40px);
+	font-style: italic;
 	font-weight: 400;
 	letter-spacing: -0.02em;
-	line-height: 1.15;
+	line-height: 1.2;
 	color: var(--fg);
 }
 .prose p + p {
@@ -733,11 +736,12 @@ html[data-scrolled] .cue {
 }
 
 @media (max-width: 800px) {
-	.about {
-		grid-template-columns: 1fr;
-	}
 	.about-photo {
-		max-width: 420px;
+		aspect-ratio: 4 / 3;
+	}
+	.about-body {
+		grid-template-columns: 1fr;
+		gap: 16px;
 	}
 }
 

@@ -28,7 +28,6 @@ const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let root: HTMLElement | null = null;
 let imgEl: HTMLImageElement;
-let titleEl: HTMLElement;
 let subEl: HTMLElement;
 let numEl: HTMLElement;
 let prevBtn: HTMLButtonElement;
@@ -76,11 +75,10 @@ function build() {
 
 	const cap = document.createElement('div');
 	cap.className = 'lb-cap';
-	titleEl = document.createElement('b');
 	subEl = document.createElement('span');
 	numEl = document.createElement('span');
 	numEl.className = 'num';
-	cap.append(titleEl, subEl, numEl);
+	cap.append(subEl, numEl);
 
 	closeBtn = button('lb-close', 'Close', ICON.close);
 	prevBtn = button('lb-prev', 'Previous photo', ICON.prev);
@@ -186,7 +184,6 @@ function collect(): Item[] {
 
 function setCaption() {
 	const item = items[index];
-	titleEl.textContent = item.title;
 	subEl.textContent = item.sub;
 	numEl.textContent = items.length > 1 ? `${index + 1} / ${items.length}` : '';
 	prevBtn.disabled = index <= 0;
