@@ -124,6 +124,73 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 400
+  - path: landscape/DSC04721.jpg
+    meta:
+      title: Kyoto Hills
+      description: Rain-soaked green hills below Kiyomizu-dera, Kyoto.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2026-10-04 12:52:06+00:00
+      fNumber: 4
+      focalLength: 16
+      iso: 100
+      model: ILCE-6700
+      shutterSpeed: 125
+      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: architecture/P1000043.jpg
+    meta:
+      title: Stephansdom
+      description: The Gothic spire of St. Stephen's Cathedral rising into a blue sky, Vienna.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2025-12-11 15:36:56+00:00
+      fNumber: 4.3
+      focalLength: 4.3
+      iso: 125
+      model: DC-TZ99
+      shutterSpeed: 60
+  - path: heritage/DSC02834.jpg
+    meta:
+      title: Castle Walls
+      description: Massive stone walls and green banks of Osaka Castle under a blue sky.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-10-02 13:42:43+00:00
+      fNumber: 4.5
+      focalLength: 29
+      iso: 320
+      model: ILCE-6700
+      shutterSpeed: 2000
+      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: art/P1010020.jpg
+    meta:
+      title: Golden Necklace
+      description: A giant golden bead necklace hanging among green branches.
+      collections:
+        - art
+    exif:
+      fNumber: 5
+      focalLength: 35
+      iso: 250
+      model: PEN-F
+      shutterSpeed: 200
+      lensModel: LUMIX G VARIO 35-100/F2.8
+  - path: nature/P1000188.jpg
+    meta:
+      title: Crow
+      description: A carrion crow walking through bright green grass.
+      collections:
+        - nature
+    exif:
+      captureDate: 2025-12-24 13:42:14+00:00
+      fNumber: 6
+      focalLength: 83.4
+      iso: 320
+      model: DC-TZ99
+      shutterSpeed: 100
   - path: landscape/P1010085.jpg
     meta:
       title: Ginkgo
@@ -137,19 +204,19 @@ images:
       model: PEN-F
       shutterSpeed: 3
       lensModel: OLYMPUS M.9-18mm F4.0-5.6
-  - path: architecture/P1010937.jpg
+  - path: architecture/P1000207.jpg
     meta:
-      title: Station Clock
-      description: The gilded clock of the former Gare d'Orsay, Paris.
+      title: Saint-Eustache
+      description: The Gothic facade of Saint-Eustache against a clear sky, Paris.
       collections:
         - architecture
     exif:
-      captureDate: 2025-12-27 11:26:18+00:00
-      fNumber: 6.3
-      focalLength: 17.5
-      iso: 800
+      captureDate: 2025-12-24 14:45:31+00:00
+      fNumber: 5.1
+      focalLength: 12.5
+      iso: 100
       model: DC-TZ99
-      shutterSpeed: 50
+      shutterSpeed: 80
   - path: heritage/DSC04002.jpg
     meta:
       title: Shrine Hall
@@ -203,19 +270,19 @@ images:
       model: PEN-F
       shutterSpeed: 640
       lensModel: OLYMPUS M.17mm F1.8
-  - path: architecture/P1011320.jpg
+  - path: architecture/P1010937.jpg
     meta:
-      title: Living Facade
-      description: A terraced building wrapped in planted ledges, rising into a blue sky, Tokyo.
+      title: Station Clock
+      description: The gilded clock of the former Gare d'Orsay, Paris.
       collections:
         - architecture
     exif:
-      fNumber: 5
-      focalLength: 17
-      iso: 200
-      model: PEN-F
-      shutterSpeed: 500
-      lensModel: OLYMPUS M.17mm F1.8
+      captureDate: 2025-12-27 11:26:18+00:00
+      fNumber: 6.3
+      focalLength: 17.5
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 50
   - path: heritage/DSC04143.jpg
     meta:
       title: Senbon Torii
@@ -230,19 +297,19 @@ images:
       model: ILCE-6700
       shutterSpeed: 160
       lensModel: E PZ 16-50mm F3.5-5.6 OSS II
-  - path: art/P1011329.jpg
+  - path: art/P1011053.jpg
     meta:
-      title: Yellow Head
-      description: A monumental yellow stone head against a deep blue sky and cypress trees.
+      title: Rooftop Figure
+      description: A sculpted figure reclining on a rooftop against a bright cloudy sky.
       collections:
         - art
     exif:
-      fNumber: 11
-      focalLength: 18
+      fNumber: 5.6
+      focalLength: 17
       iso: 200
       model: PEN-F
-      shutterSpeed: 400
-      lensModel: OLYMPUS M.9-18mm F4.0-5.6
+      shutterSpeed: 640
+      lensModel: OLYMPUS M.17mm F1.8
   - path: nature/P1022504.jpg
     meta:
       title: Above the Tiber
@@ -269,19 +336,19 @@ images:
       model: PEN-F
       shutterSpeed: 640
       lensModel: OLYMPUS M.17mm F1.8
-  - path: architecture/P1044575.jpg
+  - path: architecture/P1011320.jpg
     meta:
-      title: Gilded Tracery
-      description: A gilded Gothic grille set into a pointed stone window, St. Vitus Cathedral, Prague.
+      title: Living Facade
+      description: A terraced building wrapped in planted ledges, rising into a blue sky, Tokyo.
       collections:
         - architecture
     exif:
-      captureDate: 2026-02-02 11:00:10+00:00
-      fNumber: 5.6
-      focalLength: 38.4
-      iso: 160
-      model: DC-TZ99
-      shutterSpeed: 80
+      fNumber: 5
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: OLYMPUS M.17mm F1.8
   - path: heritage/DSC04184.jpg
     meta:
       title: Torii Corridor
@@ -296,18 +363,18 @@ images:
       model: ILCE-6700
       shutterSpeed: 60
       lensModel: E PZ 16-50mm F3.5-5.6 OSS II
-  - path: art/P1011454.jpg
+  - path: art/P1011329.jpg
     meta:
-      title: Charred Columns
-      description: Towering sculptures of burnt timber against a mountain sky.
+      title: Yellow Head
+      description: A monumental yellow stone head against a deep blue sky and cypress trees.
       collections:
         - art
     exif:
-      fNumber: 10
-      focalLength: 10
+      fNumber: 11
+      focalLength: 18
       iso: 200
       model: PEN-F
-      shutterSpeed: 320
+      shutterSpeed: 400
       lensModel: OLYMPUS M.9-18mm F4.0-5.6
   - path: nature/P1033490.jpg
     meta:
@@ -335,19 +402,86 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 500
-  - path: architecture/P1044650.jpg
+  - path: architecture/P1021926.jpg
     meta:
-      title: Gargoyle
-      description: A Gothic gargoyle with a hanging icicle on a winter cathedral wall, Prague.
+      title: Baroque Dome
+      description: A Baroque church dome and facade under drifting clouds, Rome.
       collections:
         - architecture
     exif:
-      captureDate: 2026-02-02 12:00:38+00:00
-      fNumber: 6
-      focalLength: 62.1
-      iso: 640
+      captureDate: 2026-01-02 11:25:44+00:00
+      fNumber: 4.1
+      focalLength: 9.6
+      iso: 80
       model: DC-TZ99
+      shutterSpeed: 1000
+  - path: heritage/DSC05084.jpg
+    meta:
+      title: Pagoda Spire
+      description: A vermilion pagoda rising above a dense green canopy, Kyoto.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-10-04 13:14:53+00:00
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: ILCE-6700
       shutterSpeed: 100
+      lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: art/P1011335.jpg
+    meta:
+      title: Red Steel
+      description: A red steel sculpture on a lawn under a deep blue sky.
+      collections:
+        - art
+    exif:
+      fNumber: 11
+      focalLength: 18
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 320
+      lensModel: OLYMPUS M.9-18mm F4.0-5.6
+  - path: nature/P9271992.jpg
+    meta:
+      title: Mantis
+      description: A praying mantis crossing a weathered wooden deck.
+      collections:
+        - nature
+    exif:
+      captureDate: 2026-09-27 13:24:54+00:00
+      fNumber: 4.5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 125
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: landscape/P1032883.jpg
+    meta:
+      title: Florence Rooftops
+      description: Terracotta rooftops and the bell tower of Santa Croce, Florence.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2026-01-04 10:14:34+00:00
+      fNumber: 5
+      focalLength: 17.5
+      iso: 125
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: architecture/P1044346.jpg
+    meta:
+      title: Gothic Clock
+      description: A clock set in gilded Gothic woodwork.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2026-01-29 10:26:50+00:00
+      fNumber: 5.6
+      focalLength: 47.5
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 25
   - path: heritage/DSC05147.jpg
     meta:
       title: Pagoda in the Rain
@@ -362,6 +496,33 @@ images:
       model: ILCE-6700
       shutterSpeed: 125
       lensModel: E PZ 16-50mm F3.5-5.6 OSS II
+  - path: art/P1011359.jpg
+    meta:
+      title: Parthenon Marbles
+      description: Headless marble goddesses from the Parthenon pediment.
+      collections:
+        - art
+    exif:
+      captureDate: 2025-12-29 14:00:11+00:00
+      fNumber: 7.1
+      focalLength: 7.2
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 4
+  - path: nature/PB170418.jpg
+    meta:
+      title: Pine
+      description: Pine needles and cones lit against a clear sky.
+      collections:
+        - nature
+    exif:
+      captureDate: 2022-11-17 12:03:41+00:00
+      fNumber: 5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: LEICA DG SUMMILUX 15/F1.7
   - path: landscape/P1033247.jpg
     meta:
       title: Venetian Canal
@@ -375,20 +536,19 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 80
-  - path: architecture/PB170347.jpg
+  - path: architecture/P1044575.jpg
     meta:
-      title: Into the Light
-      description: A narrow concrete corridor opening onto daylight.
+      title: Gilded Tracery
+      description: A gilded Gothic grille set into a pointed stone window, St. Vitus Cathedral, Prague.
       collections:
         - architecture
     exif:
-      captureDate: 2022-11-17 11:13:08+00:00
-      fNumber: 1.8
-      focalLength: 15
-      iso: 200
-      model: PEN-F
-      shutterSpeed: 60
-      lensModel: LEICA DG SUMMILUX 15/F1.7
+      captureDate: 2026-02-02 11:00:10+00:00
+      fNumber: 5.6
+      focalLength: 38.4
+      iso: 160
+      model: DC-TZ99
+      shutterSpeed: 80
   - path: heritage/DSC05462.jpg
     meta:
       title: Moss Guardian
@@ -403,19 +563,33 @@ images:
       model: ILCE-6700
       shutterSpeed: 160
       lensModel: E PZ 16-50mm F3.5-5.6 OSS II
-  - path: art/P1022767.jpg
+  - path: art/P1011420.jpg
     meta:
-      title: Angel with the Cross
-      description: A Baroque angel on Ponte Sant'Angelo under a grey Roman sky.
+      title: Charcoal Column
+      description: A towering column of bound charcoal against a glass facade.
       collections:
         - art
     exif:
-      captureDate: 2026-01-03 12:27:41+00:00
-      fNumber: 4.1
-      focalLength: 9
-      iso: 80
-      model: DC-TZ99
-      shutterSpeed: 800
+      fNumber: 3.5
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 250
+      lensModel: OLYMPUS M.17mm F1.8
+  - path: nature/PB170419.jpg
+    meta:
+      title: Rust and Stone
+      description: Rust-orange shrubs across a field of pale stones.
+      collections:
+        - nature
+    exif:
+      captureDate: 2022-11-17 12:04:22+00:00
+      fNumber: 5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: LEICA DG SUMMILUX 15/F1.7
   - path: landscape/P1044471.jpg
     meta:
       title: Prague Rooftops
@@ -429,6 +603,287 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 200
+  - path: architecture/P1044650.jpg
+    meta:
+      title: Gargoyle
+      description: A Gothic gargoyle with a hanging icicle on a winter cathedral wall, Prague.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2026-02-02 12:00:38+00:00
+      fNumber: 6
+      focalLength: 62.1
+      iso: 640
+      model: DC-TZ99
+      shutterSpeed: 100
+  - path: heritage/P1000231.jpg
+    meta:
+      title: Royal Gate
+      description: The gilded crown of the royal gate at Versailles against the clouds.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2025-12-24 16:28:47+00:00
+      fNumber: 5.1
+      focalLength: 16.1
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 100
+  - path: art/P1011454.jpg
+    meta:
+      title: Charred Columns
+      description: Towering sculptures of burnt timber against a mountain sky.
+      collections:
+        - art
+    exif:
+      fNumber: 10
+      focalLength: 10
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 320
+      lensModel: OLYMPUS M.9-18mm F4.0-5.6
+  - path: nature/PB170430.jpg
+    meta:
+      title: Larch
+      description: A golden larch against a clear blue sky.
+      collections:
+        - nature
+    exif:
+      captureDate: 2022-11-17 13:10:07+00:00
+      fNumber: 7.1
+      focalLength: 35
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: LUMIX G VARIO 35-100/F2.8
+  - path: landscape/P1044584.jpg
+    meta:
+      title: Above Prague
+      description: Snowy rooftops and towers of Prague beside the cathedral.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2026-02-02 11:17:01+00:00
+      fNumber: 4.5
+      focalLength: 8.4
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 160
+  - path: architecture/P1054724.jpg
+    meta:
+      title: Baroque Tower
+      description: A Baroque tower with a copper cupola above red tile roofs, Prague.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2026-02-02 14:50:31+00:00
+      fNumber: 5.6
+      focalLength: 12.5
+      iso: 125
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: heritage/P1011517.jpg
+    meta:
+      title: Ancient Brick
+      description: Weathered Roman brickwork rising against a cloudy sky.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-01-02 09:39:41+00:00
+      fNumber: 6.4
+      focalLength: 15
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 400
+  - path: art/P1011562.jpg
+    meta:
+      title: Figure in the Arch
+      description: A dark block figure silhouetted inside a concrete arch above the hills.
+      collections:
+        - art
+    exif:
+      fNumber: 5
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: OLYMPUS M.17mm F1.8
+  - path: landscape/PB170306.jpg
+    meta:
+      title: Mirror Pond
+      description: Autumn hills reflected in a still mountain pond.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2022-11-17 10:17:26+00:00
+      fNumber: 4.5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: architecture/PB170312.jpg
+    meta:
+      title: Two Walls
+      description: Two stone walls converging under a deep blue sky.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2022-11-17 10:25:22+00:00
+      fNumber: 10
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 400
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: heritage/P1021873.jpg
+    meta:
+      title: Basilica of Maxentius
+      description: The great brick vaults of the Basilica of Maxentius above palms, Roman Forum.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-01-02 11:08:33+00:00
+      fNumber: 3.5
+      focalLength: 5
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 640
+  - path: art/P1011582.jpg
+    meta:
+      title: Weathered Blocks
+      description: A weathering-steel block sculpture resting on pale concrete.
+      collections:
+        - art
+    exif:
+      fNumber: 2.2
+      focalLength: 17
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 100
+      lensModel: OLYMPUS M.17mm F1.8
+  - path: landscape/PB170360.jpg
+    meta:
+      title: Maples by Water
+      description: Red maples leaning over a long reflecting pool.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2022-11-17 11:34:30+00:00
+      fNumber: 4
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 400
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: architecture/PB170347.jpg
+    meta:
+      title: Into the Light
+      description: A narrow concrete corridor opening onto daylight.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2022-11-17 11:13:08+00:00
+      fNumber: 1.8
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 60
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: heritage/P1022247.jpg
+    meta:
+      title: Pigna
+      description: The bronze pine cone and peacocks in the Cortile della Pigna, Vatican.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-01-02 15:32:19+00:00
+      fNumber: 3.8
+      focalLength: 7.2
+      iso: 250
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: art/P1022431.jpg
+    meta:
+      title: Gilded Throne
+      description: Gilded Baroque sculpture and reliefs inside St. Peter's Basilica.
+      collections:
+        - art
+    exif:
+      captureDate: 2026-01-02 18:21:30+00:00
+      fNumber: 5.6
+      focalLength: 47.5
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 25
+  - path: landscape/PB170374.jpg
+    meta:
+      title: Red Maple
+      description: A red maple leaning over stone and still water in late autumn.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2022-11-17 11:37:59+00:00
+      fNumber: 3.2
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 800
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: architecture/PB170349.jpg
+    meta:
+      title: Stone and Water
+      description: A stone wall meeting a reflecting pool beneath misty pines.
+      collections:
+        - architecture
+    exif:
+      captureDate: 2022-11-17 11:15:25+00:00
+      fNumber: 3.5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 320
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: heritage/P1022389.jpg
+    meta:
+      title: Cathedra Petri
+      description: Bernini's gilded Chair of Saint Peter glowing beneath the dove window, St. Peter's Basilica.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-01-02 18:14:01+00:00
+      fNumber: 5.1
+      focalLength: 19
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 25
+  - path: art/P1022442.jpg
+    meta:
+      title: Archangel
+      description: The bronze archangel Michael atop Castel Sant'Angelo, Rome.
+      collections:
+        - art
+    exif:
+      captureDate: 2026-01-03 11:24:01+00:00
+      fNumber: 6.1
+      focalLength: 96.2
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 200
+  - path: landscape/PB170385.jpg
+    meta:
+      title: Autumn Terraces
+      description: Red maples over shallow stepped pools in late autumn.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2022-11-17 11:48:52+00:00
+      fNumber: 4.5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 500
+      lensModel: LEICA DG SUMMILUX 15/F1.7
   - path: architecture/PB170382.jpg
     meta:
       title: Stone Garden
@@ -443,17 +898,57 @@ images:
       model: PEN-F
       shutterSpeed: 500
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1022247.jpg
+  - path: heritage/P1033255.jpg
     meta:
-      title: Pigna
-      description: The bronze pine cone and peacocks in the Cortile della Pigna, Vatican.
+      title: Lion of Saint Mark
+      description: The golden winged lion and saints crowning St. Mark's Basilica, Venice.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-02 15:32:19+00:00
-      fNumber: 3.8
-      focalLength: 7.2
-      iso: 250
+      captureDate: 2026-01-05 10:08:01+00:00
+      fNumber: 5.1
+      focalLength: 19
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 200
+  - path: art/P1022767.jpg
+    meta:
+      title: Angel with the Cross
+      description: A Baroque angel on Ponte Sant'Angelo under a grey Roman sky.
+      collections:
+        - art
+    exif:
+      captureDate: 2026-01-03 12:27:41+00:00
+      fNumber: 4.1
+      focalLength: 9
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 800
+  - path: landscape/PB170406.jpg
+    meta:
+      title: Red Tree and Ring
+      description: A red autumn tree beside a steel ring on a stone plaza.
+      collections:
+        - landscape
+    exif:
+      captureDate: 2022-11-17 11:57:56+00:00
+      fNumber: 5.6
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 640
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: heritage/P1044434.jpg
+    meta:
+      title: Astronomical Clock
+      description: The medieval astronomical clock on the Old Town Hall, Prague.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-02-02 10:11:51+00:00
+      fNumber: 4.1
+      focalLength: 9.6
+      iso: 80
       model: DC-TZ99
       shutterSpeed: 80
   - path: art/P1044349.jpg
@@ -469,33 +964,33 @@ images:
       iso: 640
       model: DC-TZ99
       shutterSpeed: 80
-  - path: landscape/PB170374.jpg
+  - path: landscape/PC010490.jpg
     meta:
-      title: Red Maple
-      description: A red maple leaning over stone and still water in late autumn.
+      title: Rocky Shore
+      description: Sunlit rocks and clear water along a winter coastline.
       collections:
         - landscape
     exif:
-      captureDate: 2022-11-17 11:37:59+00:00
-      fNumber: 3.2
+      captureDate: 2022-12-01 12:25:00+00:00
+      fNumber: 6.3
       focalLength: 15
       iso: 200
       model: PEN-F
       shutterSpeed: 800
       lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1022389.jpg
+  - path: heritage/P1044442.jpg
     meta:
-      title: Cathedra Petri
-      description: Bernini's gilded Chair of Saint Peter glowing beneath the dove window, St. Peter's Basilica.
+      title: Prague Castle
+      description: The spires of St. Vitus Cathedral rising over a hazy winter city, Prague.
       collections:
         - heritage
     exif:
-      captureDate: 2026-01-02 18:14:01+00:00
-      fNumber: 5.1
-      focalLength: 19
-      iso: 800
+      captureDate: 2026-02-02 10:23:58+00:00
+      fNumber: 5.6
+      focalLength: 44.8
+      iso: 80
       model: DC-TZ99
-      shutterSpeed: 25
+      shutterSpeed: 200
   - path: art/P1044677.jpg
     meta:
       title: Red and Blue
@@ -507,33 +1002,6 @@ images:
       fNumber: 5.6
       focalLength: 13.2
       iso: 800
-      model: DC-TZ99
-      shutterSpeed: 80
-  - path: landscape/PB170385.jpg
-    meta:
-      title: Autumn Terraces
-      description: Red maples over shallow stepped pools in late autumn.
-      collections:
-        - landscape
-    exif:
-      captureDate: 2022-11-17 11:48:52+00:00
-      fNumber: 4.5
-      focalLength: 15
-      iso: 200
-      model: PEN-F
-      shutterSpeed: 500
-      lensModel: LEICA DG SUMMILUX 15/F1.7
-  - path: heritage/P1044434.jpg
-    meta:
-      title: Astronomical Clock
-      description: The medieval astronomical clock on the Old Town Hall, Prague.
-      collections:
-        - heritage
-    exif:
-      captureDate: 2026-02-02 10:11:51+00:00
-      fNumber: 4.1
-      focalLength: 9.6
-      iso: 80
       model: DC-TZ99
       shutterSpeed: 80
   - path: heritage/P1044517.jpg
@@ -549,3 +1017,70 @@ images:
       iso: 80
       model: DC-TZ99
       shutterSpeed: 200
+  - path: art/P1044699.jpg
+    meta:
+      title: Nested Squares
+      description: A suspended sculpture of nested golden frames.
+      collections:
+        - art
+    exif:
+      captureDate: 2026-02-02 13:39:50+00:00
+      fNumber: 5.6
+      focalLength: 6.3
+      iso: 800
+      model: DC-TZ99
+      shutterSpeed: 4
+  - path: heritage/P1044618.jpg
+    meta:
+      title: Weathervane
+      description: A copper rooster weathervane above snowy red roofs, Prague.
+      collections:
+        - heritage
+    exif:
+      captureDate: 2026-02-02 11:33:02+00:00
+      fNumber: 5.6
+      focalLength: 16.1
+      iso: 80
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: art/P1054740.jpg
+    meta:
+      title: Charles IV
+      description: The bronze statue of Emperor Charles IV before a pale facade, Prague.
+      collections:
+        - art
+    exif:
+      captureDate: 2026-02-02 14:58:43+00:00
+      fNumber: 5.6
+      focalLength: 13.2
+      iso: 500
+      model: DC-TZ99
+      shutterSpeed: 80
+  - path: art/PB170340.jpg
+    meta:
+      title: Red Tubes
+      description: A red tubular sculpture doubled in a dark reflecting pool.
+      collections:
+        - art
+    exif:
+      captureDate: 2022-11-17 11:08:08+00:00
+      fNumber: 5
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 640
+      lensModel: LEICA DG SUMMILUX 15/F1.7
+  - path: art/PB170345.jpg
+    meta:
+      title: Red Reflection
+      description: A red sculpture reflected across wet pebbles.
+      collections:
+        - art
+    exif:
+      captureDate: 2022-11-17 11:09:11+00:00
+      fNumber: 4
+      focalLength: 15
+      iso: 200
+      model: PEN-F
+      shutterSpeed: 400
+      lensModel: LEICA DG SUMMILUX 15/F1.7
